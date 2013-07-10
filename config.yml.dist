@@ -1,0 +1,13 @@
+docs_builder:
+    # Specify which file you want to look for in the repositories
+    docs_file: docs.yml
+
+    # Github credentials configuration
+    github:
+
+        # Enter a valid API token here
+        api_token: YourAPITokenGoesHere 
+
+        # Use one of the following items to determine which repositories to look at
+        # username: SomeUsernameHere 
+        # organisation: SomeOrganisationHere

@@ -1,0 +1,20 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Future500BV/php-github-api"
+        }
+    ],
+    "require": {
+        "knplabs/github-api": "*",
+        "symfony/console": "2.2.3",
+        "symfony/config" : "2.2.3",
+        "symfony/yaml" : "2.2.3"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "WhiteOctober\\": "src/"
+        }
+    }
+}

@@ -22,7 +22,7 @@ class DoBuildCommand extends Command
 
     protected $config = array();
 
-    protected $docsFile = "docs-one.yml";
+    protected $docsFile = "";
 
     /**
      * @var \Github\Client;
@@ -77,6 +77,7 @@ class DoBuildCommand extends Command
         }
 
         $this->config = $processedConfig;
+        $this->docsFile = $processedConfig["docs_file"];
     }
 
     protected function getGithubClient()

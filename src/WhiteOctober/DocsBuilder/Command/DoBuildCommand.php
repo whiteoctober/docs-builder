@@ -46,7 +46,7 @@ class DoBuildCommand extends Command
 
         $docs = $this->findDocsFiles();
         if (!count($docs)) {
-            $output->writeln("<info>No docs.yml files found, exiting");
+            $output->writeln("<info>No {$this->docsFiles} files found, exiting");
 
             return;
         }
@@ -115,7 +115,7 @@ class DoBuildCommand extends Command
             $repoName = $repoArr["name"];
             $this->output->writeln("<info>" . $repoName . "</info>");
 
-            // Check for a docs.yml file
+            // Check for a {$this->docsFile} file
             try {
                 $file = $this->client->api("repo")->contents()->show($user, $repoName, $this->docsFile);
                 $this->output->writeln("<comment>{$this->docsFile} present</comment>");

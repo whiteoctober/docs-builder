@@ -121,7 +121,6 @@ class DoBuildCommand extends Command
                 $this->output->writeln("<comment>{$this->docsFile} present</comment>");
 
                 $docs[$repoName] = $file["content"];
-                break;
             }
             catch (\Github\Exception\RuntimeException $e) {
                 $this->output->writeln("<error>Not found</error>");

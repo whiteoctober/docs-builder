@@ -3,20 +3,70 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "15a934def8996f855d07f0b77f7364d7",
+    "hash": "1a3c637bb764a5ee3d138ef0e6c7b129",
     "packages": [
+        {
+            "name": "incenteev/composer-parameter-handler",
+            "version": "dev-master",
+            "target-dir": "Incenteev/ParameterHandler",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Incenteev/ParameterHandler.git",
+                "reference": "e0488a429caecde54ab81301d6eb4873c1c71e7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Incenteev/ParameterHandler/zipball/e0488a429caecde54ab81301d6eb4873c1c71e7e",
+                "reference": "e0488a429caecde54ab81301d6eb4873c1c71e7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/yaml": "~2.0"
+            },
+            "require-dev": {
+                "composer/composer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Incenteev\\ParameterHandler": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
+                }
+            ],
+            "description": "Composer script handling your ignored parameter file",
+            "homepage": "https://github.com/Incenteev/ParameterHandler",
+            "keywords": [
+                "parameters management"
+            ],
+            "time": "2013-07-12 09:55:27"
+        },
         {
             "name": "knplabs/github-api",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Future500BV/php-github-api.git",
-                "reference": "c94daa8775dd2a54a70f9d82187a4bf1a3c371b0"
+                "reference": "7fd1cb1e2eae7ecad4d2258820dba6f604a8c57d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Future500BV/php-github-api/zipball/c94daa8775dd2a54a70f9d82187a4bf1a3c371b0",
-                "reference": "c94daa8775dd2a54a70f9d82187a4bf1a3c371b0",
+                "url": "https://api.github.com/repos/Future500BV/php-github-api/zipball/7fd1cb1e2eae7ecad4d2258820dba6f604a8c57d",
+                "reference": "7fd1cb1e2eae7ecad4d2258820dba6f604a8c57d",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +110,7 @@
             "support": {
                 "source": "https://github.com/Future500BV/php-github-api/tree/master"
             },
-            "time": "2013-07-08 15:25:08"
+            "time": "2013-07-11 13:41:14"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -259,9 +309,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "incenteev/composer-parameter-handler": 20
+    },
     "platform": [
 
     ],

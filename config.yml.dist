@@ -11,3 +11,6 @@ docs_builder:
         # Use one of the following items to determine which repositories to look at
         # username: SomeUsernameHere 
         # organisation: SomeOrganisationHere
+
+        # This is in as a prompt to get you going
+        username: SomeUsernameHere
